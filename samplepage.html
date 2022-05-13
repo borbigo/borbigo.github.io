@@ -21,46 +21,29 @@
 </head>
 
 <body>
+
     <!--Bastien: Added Nav bar (code pulled from BootStrap website) -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
+    <!--Jaime:Added a scrollspy navbar instead, changed list of characters to grid and inserted cards along with images.-->
+    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#theme">Theme</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reason">Reason</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#favorite">Favorite</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#img">Images</a>
+          </li>
+        </ul>
       </nav>
     <!--Jaime: This my favorite color :)!-->
     <h1 style="color:aquamarine;">This is our team HTML page</h1>
-    <h2>The Theme for the page is our favorite video games</h2>
+    <h2 id="theme">The Theme for the page is our favorite video games</h2>
     <ul>
         <li>Jaime-<span style="color: red;font-weight: bold;">"Pokemon(Pearl)"</span></li>
         <!--Bastien: Added list tag with name and favorite game with text modifiers-->
@@ -69,7 +52,7 @@
         <li>Jase-<span style="color: orange; font-weight: bolder;">"Destiny 2"</span></li>
         <!--Jase: added in game title-->
     </ul>
-    <h3>Reasoning for our choice</h3>
+    <h3 id="reason">Reasoning for our choice</h3>
     <table border="2" width="500">
         <tr>
             <td width="25%">Jaime</td>
@@ -87,15 +70,41 @@
             <td colspan="1">I like this game due to the exploration and style of the game, as well as the genre.</td>
         </tr>
     </table>
-    <h3>Favorite characters</h3>
+    <h3 id="favorite">Favorite characters</h3>
     <ul>
         <li><strong>- Jaime</strong>
-            <ol>
-                <li class="list"><em>Piplup</em></li>
-                <li class="list"><em>Pikachu</em></li>
-                <p id="Gible">Gible is one of the late game pokemon and looks like a cute little shark</p>
-            </ol>
-        </li>
+            <div class="container">
+                <div class="row">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.mobygames.com/images/promo/original/1473451133-2768577942.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Piplup</h5>
+                          <p class="card-text"> Prefers cold climes and appears along coasts. It’s an adorable little thing—as cute as any child—but it’s also prideful, unwilling to accept handouts from people.</p>
+                          <a href="https://www.mobygames.com/images/promo/original/1473451133-2768577942.jpg" class="btn btn-primary">View Image</a>
+                        </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i0.wp.com/thegamehaus.com/wp-content/uploads/2021/07/pokemon-anime-pikachu-wound-apr182020.jpeg?fit=1500%2C844&ssl=1" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Pikachu</h5>
+                              <p class="card-text"> Possesses cheek sacs in which it stores electricity. This clever forest-dweller roasts tough berries with an electric shock before consuming them.</p>
+                              <a href="https://i0.wp.com/thegamehaus.com/wp-content/uploads/2021/07/pokemon-anime-pikachu-wound-apr182020.jpeg?fit=1500%2C844&ssl=1" class="btn btn-primary">View Image</a>
+                            </div>
+                  <div class="col-sm">
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://pbs.twimg.com/media/D3zxW3qV4AAa8mX.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Gible</h5>
+                      <p id= "Gible" class="card-text">It nests in caves untouched by sunlight. Its sharp teeth may fall out when worn away or after an impact, but they regrow within a few days.</p>
+                      <a href="https://pbs.twimg.com/media/D3zxW3qV4AAa8mX.jpg" class="btn btn-primary">View Image</a>
+                    </div>
+                    </div>
+              </div>
+              </div>
+
+            
         <!--Bastien: Added section for my favorite characters using the list, ordered list and paragraph tags-->
         <li><strong> - Bastien </strong></li>
         <ol>
@@ -132,7 +141,7 @@
     </ul>
     
     <div class="imgs">
-        <h4>Favorite image from the game</h4>
+        <h4 id="img">Favorite image from the game</h4>
         <img src="https://www.mobygames.com/images/promo/original/1473451133-2768577942.jpg" width="500" alt="pengu"
             title="piplup :)">
         <div class="center">
